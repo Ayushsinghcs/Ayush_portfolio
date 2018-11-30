@@ -1,0 +1,17 @@
+{
+  "name": "myprofile",
+  "version": "1.0.0",
+  "description": "my profile page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "build:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Ayush Singh <ayushsinghcse19@gmail.com>",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
+  }
+}
